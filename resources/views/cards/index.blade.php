@@ -6,7 +6,7 @@
 
 	@foreach ($cards as $card)
 
-		<div> {{ $card.title }} </div>
+		<div> {{ $card->title }} </div>
 
 	@endforeach
 
