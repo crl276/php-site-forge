@@ -9,7 +9,7 @@
 		@foreach($card->notes as $note)
 
 			<li>{{ $note->body }}<br>
-				
+				{{ $note->created_at }}
 			</li>
 
 		@endforeach
