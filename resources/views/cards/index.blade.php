@@ -6,7 +6,9 @@
 
 	@foreach ($cards as $card)
 
-		<div> {{ $card->title }} </div>
+		<div> 
+			<a href="/cards/{{ $card->id }}">{{ $card->title }}</a>
+		</div>
 
 	@endforeach
 
