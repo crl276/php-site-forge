@@ -26,6 +26,8 @@ Route::get('/cards', 'CardsController@index');
 
 Route::get('/cards/{card}', 'CardsController@show');
 
+Route::get('notes/{note}/edit', 'NotesController@edit');
+
 Route::post('cards/{card}/notes', 'NotesController@store');
 
 Route::patch('notes/{note}', 'NotesController@update');
