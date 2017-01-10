@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Card;
+use App\Note;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
