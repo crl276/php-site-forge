@@ -15,6 +15,5 @@
 		@endforeach
 	</ul>
 
-	
 
 @stop

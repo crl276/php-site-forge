@@ -20,6 +20,14 @@ class Card extends Model
 
     public function votes()
     {
+
         return $this->hasMany(Vote::class);
+
+    }
+
+    public function upvote()
+    {
+
+        $this->votes()->save($request->all());
     }
 }

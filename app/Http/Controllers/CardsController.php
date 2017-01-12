@@ -15,7 +15,7 @@ class CardsController extends Controller
 
     	return view('cards.index', compact('cards'));
 
-    }
+    } 
 
     public function show(Card $card)
     
