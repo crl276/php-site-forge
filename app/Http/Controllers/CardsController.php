@@ -15,10 +15,7 @@ class CardsController extends Controller
 
     	$cards = Card::all();
 
-    	return View::make('cards.index')->with[(
-    		'people' => $people,
-    		'cards' => $cards,
-    	)];
+    	return view('cards.index', compact('cards', 'people'));
 
     }
 
