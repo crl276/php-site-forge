@@ -8,8 +8,11 @@
 
 		<div> 
 			<a href="/cards/{{ $card->id }}">{{ $card->title }}</a>
-		</div>
+		</div>	
 
 	@endforeach
+
+	{{ $people[2] }}
+
 
 @stop

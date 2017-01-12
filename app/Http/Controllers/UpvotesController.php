@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Card;
-use App\Note;
 use Illuminate\Http\Request;
 
 class UpvotesController extends Controller
 {
     //
-	$upvotes = 0;
+	$upvotes = [0,1,2];
 
 	public function upvote()
 	{
-		$upvote += 1;
+		
+		return view('cards.show');
 	}
 
 }

@@ -8,11 +8,14 @@ use Illuminate\Http\Request;
 class CardsController extends Controller
 {
     //
+
     public function index() {
+
+    	$people = ['Moe', 'Larry', 'Curly'];
 
     	$cards = Card::all();
 
-    	return view('cards.index', compact('cards'));
+    	return view('cards.index', compact('cards'), compact('people'));
 
     }
 
