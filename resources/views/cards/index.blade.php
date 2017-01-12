@@ -12,9 +12,11 @@
 
 	@endforeach
 
-	<button type="submit" class="btn btn-primary" method="POST" action="/cards/upvote">
+	<form action="POST">
+	<button input type="submit" class="btn btn-primary" method="POST" action="/cards/upvote">
 	
 	UpVote</button>
+	</form>
 
 	@foreach($card->votes as $vote)
 		<li>{{ $vote->vote_count }}</li>
