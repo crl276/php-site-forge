@@ -13,7 +13,7 @@ class CardsController extends Controller
 
     	$cards = Card::all();
 
-    	return view('cards.index', compact('cards', 'people'));
+    	return view('cards.index', compact('cards'));
 
     }
 
@@ -25,12 +25,6 @@ class CardsController extends Controller
     
     }
 
-    public function upvotes(Card $card)
 
-    {
-
-    	
-
-    }
 
 }
