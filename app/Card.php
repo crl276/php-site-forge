@@ -17,4 +17,9 @@ class Card extends Model
     {
     	return $this->notes()->save($note);
     }
+
+    public function votes()
+    {
+        return $this->hasMany(Vote::class);
+    }
 }
