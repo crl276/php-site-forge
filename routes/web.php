@@ -32,4 +32,4 @@ Route::post('cards/{card}/notes', 'NotesController@store');
 
 Route::patch('notes/{note}', 'NotesController@update');
 
-Route::put('/cards/{card}upvote', 'UpvotesController@upvote');
+Route::post('/cards/upvote', 'UpvotesController@store');

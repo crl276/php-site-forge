@@ -16,7 +16,7 @@ class VotesController extends Controller
 	{
 
 		$vote = App\Vote::updateOrCreate(
-			['vote_count' += 1;]
+			['vote_count' += 1];
 		);
 		
 		return back;
